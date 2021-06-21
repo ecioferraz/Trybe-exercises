@@ -1,1 +1,0 @@
-Descrição de exercícios.

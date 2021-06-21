@@ -1,1 +1,1 @@
-Repositório inicial de exercícios da Trybe.
+Repositório de exercícios da Trybe.
