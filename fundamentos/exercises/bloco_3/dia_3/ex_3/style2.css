@@ -1,0 +1,32 @@
+div:hover {
+  border: 1px solid tomato;
+}
+
+.pri {
+  background-color: blue;
+  color: white;
+  font-style: italic;
+}
+
+.sec {
+  background-color: purple;
+  font-family: monospace;
+}
+
+.com {
+  background-color: seagreen;
+  font-family: sans-serif;
+  font-size: xx-large;
+  font-style: italic;
+}
+
+.esc {
+  background-color: brown;
+  font-size: larger;
+}
+
+.cla {
+  background-color: yellow;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: italic;
+}
