@@ -54,7 +54,7 @@ let ang1 = 60;
 let ang2 = 80;
 let ang3 = 40;
 
-if (ang1 + ang2 + ang3 == 180 && ang1 > 0 && ang2 > 0 && ang3 > 0) {
+if (ang1 + ang2 + ang3 === 180 && ang1 > 0 && ang2 > 0 && ang3 > 0) {
   console.log(true)
 } else {
   console.log(false);
@@ -91,31 +91,31 @@ let nota = 89;
 
 if (nota >= 90 && nota <= 100) {
   console.log("A");
-} else if (nota >= 80 && nota < 90) {
+} else if (nota >= 80) {
   console.log("B");
-} else if (nota >= 70 && nota < 80) {
+} else if (nota >= 70) {
   console.log("C");
-} else if (nota >= 60 && nota < 70) {
+} else if (nota >= 60) {
   console.log("D");
-} else if (nota >= 50 && nota < 60) {
+} else if (nota >= 50) {
   console.log("E");
-} else if (nota >= 0 && nota < 50) {
+} else if (nota >= 0) {
   console.log("F");
 } else {
   console.log("Não é um valor válido.")
 }
 
-// Exercício 8
+/* Exercício 8
 
 Bonus: use somente um if . */
 
-if (a % 2 == 0 || b % 2 == 0 || c % 2 == 0) {
+if (a % 2 === 0 || b % 2 === 0 || c % 2 === 0) {
   console.log(true);
 } else {
   console.log(false);
 }
 
-// Exercício 9
+/* Exercício 9
 
 Bonus: use somente um if. */
 
@@ -151,8 +151,6 @@ if (salarioBruto <= 1556.94) {
 } else {
   salarioBase = salarioBruto - 570.88;
 }
-
-console.log(salarioBase);
 
 if (salarioBase <= 1903.98) {
   salarioLiquido = salarioBase;
