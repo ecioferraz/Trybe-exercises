@@ -1,5 +1,4 @@
-// 1. Para o primeiro exercício de hoje, faça um programa que, dado um valor n qualquer, seja n > 1 , imprima na tela um quadrado feito de asteriscos de lado de tamanho n . Por exemplo:
-
+// Exercício 1
 let n = 5;
 let linha = "";
 
@@ -11,8 +10,7 @@ for (let index = 0; index < n; index += 1) {
   console.log(linha);
 }
 
-/* 2. Para o segundo exercício, faça o mesmo que antes, mas que imprima um triângulo retângulo com 5 asteriscos de base. Por exemplo: */
-
+// Exercício 2
 let n = 5;
 let linha = "";
 
@@ -21,4 +19,62 @@ for (let index = 0; index < n; index += 1) {
   console.log(linha);
 }
 
-/* 3. Agora inverta o lado do triângulo. Por exemplo: */
+// Exercício 3
+let n = 5;
+let linha = "";
+let position = n;
+
+for (let indexLinha = 0; indexLinha < n; indexLinha += 1) {
+  for (indexColuna = 0; indexColuna <= n; indexColuna += 1) {
+    if (indexColuna < position) {
+      linha = linha + " ";
+    } else {
+      linha = linha + "*";
+    }
+  }
+  console.log(linha);
+  linha = "";
+  position -= 1;
+}
+
+// Exercício 4
+let n = 5;
+let linha = "";
+let middle = (n + 1) / 2;
+let left = middle;
+let right = middle;
+
+for (let indexLinha = 0; indexLinha <= middle; indexLinha += 1) {
+  for (let indexColuna = 0; indexColuna <= n; indexColuna += 1) {
+    if (indexColuna > left && indexColuna < right) {
+      linha = linha + "*";
+    } else {
+      linha = linha + " ";
+    }
+  }
+  console.log(linha);
+  linha = "";
+  right += 1;
+  left -= 1;
+}
+
+// Bônus
+// Exercício 5
+let n = 7;
+let middle = (n + 1) / 2;
+let left = middle;
+let right = middle;
+
+for (indexLinha = 1; indexLinha <= middle; indexLinha += 1) {
+  let linha = "";
+  for(let indexColuna = 1; indexColuna <= n; indexColuna += 1) {
+    if (indexColuna == left || indexColuna == right || indexLinha == middle) {
+      linha = linha + "*";
+    } else {
+      linha = linha + " ";
+    }
+  }
+  left -= 1;
+  right += 1;
+  console.log(linha);
+}
