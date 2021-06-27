@@ -1,4 +1,4 @@
-/* Exercício 1
+// Exercício 1
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 for (index = 0; index < numbers.length; index += 1) {
@@ -31,7 +31,7 @@ console.log(media);
 if (media > 20) {
   console.log("Valor maior que 20.");
 } else {
-  console.log("Valor menor que 20.");
+  console.log("Valor menor ou igual a 20.");
 }
 
 // Exercício 5
@@ -53,12 +53,14 @@ let impar = 0;
 for (index = 0; index < numbers.length; index += 1) {
   if ((numbers[index] % 2) !== 0) {
     impar += 1;
-  } else {
-    console.log("Nenhum valor ímpar encontrado.")
-  };
+  }
 }
 
-console.log(impar);
+if (impar !== 0) {
+  console.log(impar);
+} else {
+  console.log("Nenhum valor ímpar encontrado.")
+}
 
 // Exercício 7
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
@@ -116,7 +118,7 @@ for (let index = 1; index < numbers.length; index += 1) {
 }
 
 console.log(numbers);
-*/
+
 // Exercício 3
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 let newNumbers = [];
