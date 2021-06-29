@@ -1,4 +1,4 @@
-/* Exercício 1
+// Exercício 1
 function verificaPalindrome(word) {
   for(let index in word){
     if(word[index] != word[(word.length - 1) - index]){
@@ -40,7 +40,7 @@ function lowestNumber(numbers) {
 
 console.log(lowestNumber(array));
 
-// Exercício 4 */
+// Exercício 4
 let arrayNames = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
 
 function longerName(names) {
@@ -54,3 +54,38 @@ function longerName(names) {
 }
 
 console.log(longerName(arrayNames));
+
+// Exercício 5
+
+
+// Exercício 6 
+let n = 5;
+
+function sum(numbers) {
+  let total = 0;
+  for (let index = 0; index <= numbers; index += 1) {
+    total += index;
+  }
+  return total;
+}
+
+console.log(sum(n));
+
+// Exercício 7
+let word = 'britney';
+let ending = 'ney';
+
+function checkEnding(word,ending) {
+  let start = word.length - ending.length;
+  let verify = '';
+  for (index = start; index < word.length; index += 1) {
+    verify += word[index];
+  };
+  if (verify === ending) {
+    return true;
+  } else {
+    return false;
+  };
+}
+
+console.log(checkEnding(word,ending));
