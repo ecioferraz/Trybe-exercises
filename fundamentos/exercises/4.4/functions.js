@@ -91,13 +91,21 @@ function checkEnding(word,ending) {
 console.log(checkEnding(word,ending));
 
 // Bônus
-// Exercício 1
-let roman = {
-  I: 1,
-  V: 5,
-  X: 10,
-  L: 50,
-  C: 100,
-  D: 500,
-  M: 1000
-};
+// Exercício 2
+let vector = [[1, 2], [3,4,5,6], [7,8,9,10]];
+
+function arrayOfNumbers(vector) {
+  let newArray = [];
+  for (let index = 0; index < vector.length; index += 1) {
+    let numbers = vector[index];
+    for (let index2 = 0; index2 < numbers.length; index2 += 1) {
+      let current = numbers[index2];
+      if ((current % 2) === 0) {
+        newArray.push(current);
+      }
+    }
+  }
+  return newArray;
+}
+
+console.log(arrayOfNumbers(vector));
