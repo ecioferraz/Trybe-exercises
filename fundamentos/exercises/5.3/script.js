@@ -10,7 +10,6 @@ function createDaysOfTheWeek() {
     weekDaysList.appendChild(dayListItem);
   };
 };
-
 createDaysOfTheWeek();
 
 // Escreva seu código abaixo.
@@ -51,10 +50,90 @@ december();
 // Exercício 2
 function btnHoliday (string) {
   let btn = document.createElement('button');
-  btn.innerText = string;
+  btn.innerHTML = string;
   btn.id = 'btn-holiday';
   document.querySelector('.buttons-container').appendChild(btn);
 }
 btnHoliday('Feriados');
 
 // Exercício 3
+function highlightHoliday() {
+  let btn = document.querySelector('#btn-holiday');
+  let holidays = document.querySelectorAll('.holiday');
+  let backgroundColor = 'rgb(238,238,238)';
+  let highlightColor = 'white';
+
+  btn.addEventListener('click', function() {
+    for (let index = 0; index < holidays.length; index += 1) {
+      if (holidays[index].style.backgroundColor === highlightColor) {
+        holidays[index].style.backgroundColor = backgroundColor;
+      } else {
+        holidays[index].style.backgroundColor = highlightColor;
+      }
+    }
+  })
+}
+highlightHoliday();
+
+// Exercício 4
+function btnFriday (string) {
+  let btn = document.createElement('button');
+  btn.innerHTML = string;
+  btn.id = 'btn-friday';
+  document.querySelector('.buttons-container').appendChild(btn);
+}
+btnFriday('Sexta-feira');
+
+// Exercício 5
+function highlightFriday() {
+  let btn = document.querySelector('#btn-friday');
+  let fridays = document.querySelectorAll('.friday');
+  let newText = 'SEXTOU!'
+
+  btn.addEventListener('click', function() {
+    for (let index = 0; index < fridays.length; index += 1) {
+      if (fridays[index].innerHTML !== newText) {
+        fridays[index].innerHTML = newText;
+      } else {
+        fridays[index].innerHTML = fridayDays[index];
+      }
+    }
+  })
+  fridayDays = [4, 11, 18, 25];
+}
+highlightFriday();
+
+// Exercício 6
+function zoomIn() {
+let days = document.querySelector('#days');
+
+days.addEventListener('mouseover', function(event) {
+    event.target.style.fontSize = '30px';
+    event.target.style.fontWeight = '600';
+  })
+};
+zoomIn();
+
+function zoomOut() {
+  let days = document.querySelector('#days');
+
+  days.addEventListener('mouseout', function(event) {
+    event.target.style.fontSize = '20px';
+    event.target.style.fontWeight = '200';
+  });
+}
+zoomOut();
+
+// Exercício 7
+function tasks(string) {
+  let myTasks = document.querySelector('.my-tasks');
+  let newSpan = document.createElement('span');
+  newSpan.innerHTML = string + '<br>';
+
+  myTasks.appendChild(newSpan);
+}
+
+tasks('cozinhar');
+
+
+// Exercício 8
