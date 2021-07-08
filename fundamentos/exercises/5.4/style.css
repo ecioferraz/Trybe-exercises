@@ -1,0 +1,42 @@
+body {
+  margin: 80px;
+  text-align: center;
+  background-color: bisque;
+}
+
+.preferences {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-left: 18%;
+  margin-right: 18%;
+  background-color: rgb(212, 207, 202);
+  padding: 10px;
+}
+
+div.options {
+  margin: 2px;
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
+}
+
+#title {
+  padding-top: 10px;
+  margin-bottom: -10px;
+}
+
+.paragraphs {
+  padding: 2.5%;
+}
+
+p {
+  text-align: justify;
+  color: black;
+}
+
+article {
+  margin: 2% 5% 5% 5%;
+  background-color: white;
+}
