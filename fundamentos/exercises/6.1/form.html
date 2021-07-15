@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 6.1</title>
+</head>
+<body>
+  <header>
+    <h1>Formulário 6.1</h1>
+  </header>
+  <main>
+    <form action="" method="GET">
+      <fieldset>
+        <legend>Dados pessoais</legend>
+        <label for="name">Nome: 
+          <input type="text" name="name" id="name" maxlength="40" required>
+        </label>
+        <br>
+        <label for="input-email">E-mail: 
+          <input type="email" name="email" id="input-email" maxlength="50" required>
+        </label>
+        <br>
+        <label for="cpf">Cpf: 
+          <input type="number" name="cpf" id="cpf" maxlength="11" required>
+        </label>
+        <br>
+        <label for="address">Endereço: 
+          <input type="text" name="address" id="address" maxlength="200" required>
+        </label>
+        <br>
+        <label for="city">Cidade: 
+          <input type="text" name="city" id="city" maxlength="28" required>
+        </label>
+        <br>
+        <label for="state">Estado: 
+          <select name="state" id="state" required></select>
+        </label>
+        <br>
+        <label for="house">Tipo de imóvel: 
+          <input type="radio" name="housing" id="house" value="housing" required>Casa
+        </label>
+        <label for="apartment">
+          <input type="radio" name="housing" id="apartment" value="housing" required>Apartamento
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Sobre seu último emprego</legend>
+        <label for="abstract">Resumo do currículo
+          <textarea name="abstract" id="abstract" cols="30" rows="10" maxlength="1000" required></textarea>
+        </label>
+        <br>
+        <label for="position">Cargo: 
+          <input type="text" name="position" id="position" maxlength="40" required>
+        </label>
+        <br>
+        <label for="job-description">Resumo do currículo
+          <textarea name="job-description" id="job-description" cols="30" rows="10" maxlength="500" required></textarea>
+        </label>
+        <br>
+        <label for="begining">Data de início:
+          <input type="date" name="period" id="begining" required>
+        </label>
+      </fieldset>
+      <button type="reset">Limpar</button>
+    </form>
+  </main>
+</body>
+<script src="script.js"></script>
+</html>
