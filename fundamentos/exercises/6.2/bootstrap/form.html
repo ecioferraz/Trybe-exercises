@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 6.1</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+<body>
+  <header class="text-center">
+    <h1 class="display-4">Formulário 6.1</h1>
+  </header>
+  <main>
+    <form action="" method="GET" class="js-form">
+      <fieldset class="speaker-form">
+        <div>
+          <legend>Dados pessoais</legend>
+        </div>
+        <div>
+          <label class="form-label mt-3" for="name">Nome:</label>
+            <input class="form-control" data-validate-field="name" placeholder="Digite seu nome" type="text" name="name" id="name" maxlength="40" required>
+        </div>
+        <div class="my-3">
+          <label class="form-label" for="input-email">E-mail:</label>
+            <input class="form-control" data-validate-field="email" placeholder="Digite seu email" type="email" name="email" id="input-email" maxlength="50" required>
+        </div>
+        <div class="my-3">
+          <label class="form-label" for="cpf">Cpf:</label>
+            <input class="form-control" data-validate-field="cpf" placeholder="000.000-00" type="text" name="cpf" id="cpf" maxlength="11" required>
+        </div>
+        <div class="my-3">
+          <label class="form-label" for="address">Endereço:</label>
+            <input class="form-control" data-validate-field="address" placeholder="Digite seu endereço" type="text" name="address" id="address" maxlength="200" required>
+        </div>
+        <div class="row">
+          <div class="my-3 col">
+            <label class="form-label" for="city">Cidade:</label>
+            <input class="form-control" data-validate-field="city" placeholder="Cidade" type="text" name="city" id="city" maxlength="28" required>
+          </div>
+          <div class="my-3 col">
+            <label class="form-label" for="state">Estado:</label>
+              <select class="form-select" data-validate-field="state" name="state" id="state" required></select>
+          </div>
+        </div>
+        <div class="my-3">
+          <p>Tipo de imóvel:</p>
+          <div class="form-check-inline">
+            <label class="form-label" for="house">
+            <input class="form-check-input" data-validate-field="radio" type="radio" name="housing" id="house" value="housing" required> Casa</label>
+          </div>
+          <div class="form-check-inline">
+            <label class="form-label" for="apartment">
+            <input class="form-check-input" data-validate-field="radio" type="radio" name="housing" id="apartment" value="housing" required> Apartamento</label>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="speaker-form">
+        <div>
+          <legend>Sobre seu último emprego</legend>
+        </div>
+        <div class="my-3">
+          <label class="form-label" for="abstract">Resumo do currículo</label>
+            <textarea class="form-control" data-validate-field="text" name="abstract" id="abstract" cols="30" rows="10" maxlength="1000" required></textarea>
+        </div>
+        <div class="row">
+          <div class="my-3 col">
+            <label class="form-label" for="position">Cargo:
+            <input class="form-control" data-validate-field="position" type="text" name="position" id="position" maxlength="40" required>
+          </label>
+          </div>
+          <div class="my-3 col">
+            <label class="form-label" for="start-date">Data de início:
+            <input class="form-control" data-validate-field="date" autocomplete="off" type="text" placeholder="DD/MM/AAAA" name="start-date" id="start-date" required>
+            </label>
+          </div>
+          <div class="my-3">
+            <label class="form-label" for="job-description">Resumo do currículo</label>
+            <textarea class="form-control" data-validate-field="description" name="job-description" id="job-description" cols="30" rows="10" maxlength="500" required></textarea>
+          </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Enviar</button>
+        <button class="btn btn-secondary clear-btn" type="reset">Limpar</button>
+      </fieldset>
+    </form>
+  </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+<script src="script.js" type="module"></script>
+</html>
