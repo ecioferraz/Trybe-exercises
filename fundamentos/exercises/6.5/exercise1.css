@@ -1,0 +1,45 @@
+body {
+  font-size: .8em;
+  margin: 20px;
+}
+
+h1 {
+  font-size: xx-large;
+}
+
+h2 {
+  font-size: x-large;
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+    margin: 20px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+@media (min-width: 500px) {
+  body {
+    background-color: blanchedalmond;
+    font-size: 1em;
+    margin: 25px;
+  }
+
+  figure {
+    float: left;
+    flex-direction: column;
+    width: 40%;
+  }
+}
+
+@media (min-width: 800px) {
+  body {
+    background-color: khaki;
+    font-size: 1.1em;
+    margin: 50px;
+    max-width: 80%;
+  }
+}
