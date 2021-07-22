@@ -99,14 +99,12 @@ li {
 }
 
 .chapters h1 {
-  margin-left: 30px;
-  margin-right: 30px;
+  margin: 1em 30px;
   font-size: 1.3em;
 }
 
 .main-content p {
-  margin-left: 30px;
-  margin-right: 30px;
+  margin: 1em 30px;
   align-items: center;
   text-align: justify;
 }
@@ -124,8 +122,7 @@ footer {
 }
 
 footer h3 {
-  margin: 15px 20px 8px 20px;
-  margin-bottom: .5em;
+  margin: 15px 20px 8px;
 }
 
 footer p {
