@@ -50,7 +50,7 @@ const factor = num => (num < 2) ? 1 : factor (num - 1) * num; // Colocando a fun
 
 console.log(factor(4));
 
-//referência
+// referência
 // https://stackoverflow.com/questions/3959211/what-is-the-fastest-factorial-function-in-javascript
 
 // 2. Crie uma função que receba uma frase e retorne qual a maior palavra.
@@ -71,3 +71,5 @@ const longestWord = str => {
 
 console.log(longestWord('Antônio foi no banheiro e não sabemos o que aconteceu'));
 
+// referência
+// https://stackoverflow.com/questions/17386774/javascript-find-longest-word-in-a-string
