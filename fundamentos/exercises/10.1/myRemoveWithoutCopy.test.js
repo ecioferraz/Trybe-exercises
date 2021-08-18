@@ -1,5 +1,3 @@
-const { it, expect } = require('@jest/globals');
-const exp = require('constants');
 const myRemoveWithoutCopy = require('./myRemoveWithoutCopy');
 
 describe('Testa a função myRemoveWithoutCopy(arr, item)', () => {
