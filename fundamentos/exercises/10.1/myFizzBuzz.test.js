@@ -1,4 +1,3 @@
-const { it } = require('@jest/globals');
 const myFizzBuzz = require('./myFizzBuzz');
 
 describe('Testa a função myFizzBuzz(num)', () => {
