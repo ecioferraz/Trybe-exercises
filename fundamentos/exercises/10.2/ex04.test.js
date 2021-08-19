@@ -1,6 +1,5 @@
 const getRepos = require('./ex04');
 
-
 it('Check if getRepos function fetches the right repository', () => {
   const url = 'https://api.github.com/orgs/tryber/repos';
   
