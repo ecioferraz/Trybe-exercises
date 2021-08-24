@@ -66,5 +66,5 @@ describe('Tests upperCase(), firstCharacter() and concatStr()', () => {
     expect(concatStr).toHaveBeenCalled();
     expect(concatStr).toHaveBeenCalledTimes(1);
     expect(concatStr).toHaveBeenCalledWith('test1', 'test2', 'test3');
-  })
+  });
 })
