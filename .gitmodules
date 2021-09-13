@@ -1,0 +1,6 @@
+[submodule "front-end/exercises/13.1/front-end/exercises/13.1/exercise-dog-image"]
+	path = front-end/exercises/13.1/front-end/exercises/13.1/exercise-dog-image
+	url = git@github.com:ecioferraz/exercise-dog-image.git
+[submodule "front-end/exercises/13.1/exercise-dog-image"]
+	path = front-end/exercises/13.1/exercise-dog-image
+	url = git@github.com:ecioferraz/exercise-dog-image.git
