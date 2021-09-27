@@ -4,3 +4,6 @@
 [submodule "front-end/exercises/13.1/exercise-dog-image"]
 	path = front-end/exercises/13.1/exercise-dog-image
 	url = git@github.com:ecioferraz/exercise-dog-image.git
+[submodule "front-end/exercises/15.1/exercise-to-do-list"]
+	path = front-end/exercises/15.1/exercise-to-do-list
+	url = git@github.com:ecioferraz/exercise-todo-list.git
