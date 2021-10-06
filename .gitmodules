@@ -16,3 +16,9 @@
 [submodule "front-end/exercises/15.3/exercise-to-do-list"]
 	path = front-end/exercises/15.3/exercise-to-do-list
 	url = git@github.com:ecioferraz/exercise-todo-list.git
+[submodule "front-end/exercises/15.3/exercise-portfolio-web"]
+	path = front-end/exercises/15.3/exercise-portfolio-web
+	url = git@github.com:ecioferraz/exercise-portfolio-web.git
+[submodule "front-end/exercises/15.3/exercicio-portfolio-web"]
+	path = front-end/exercises/15.3/exercicio-portfolio-web
+	url = git@github.com:ecioferraz/exercise-portfolio-web.git
