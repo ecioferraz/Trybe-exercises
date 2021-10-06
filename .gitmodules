@@ -10,12 +10,3 @@
 [submodule "front-end/exercises/front-end/exercises/15.2/exercise-digimon-finder"]
 	path = front-end/exercises/front-end/exercises/15.2/exercise-digimon-finder
 	url = git@github.com:ecioferraz/exercise-portfolio-web.git
-[submodule "front-end/exercises/exercise-to-do-list"]
-	path = front-end/exercises/exercise-to-do-list
-	url = git@github.com:ecioferraz/exercise-todo-list.git
-[submodule "front-end/exercises/15.3/exercise-to-do-list"]
-	path = front-end/exercises/15.3/exercise-to-do-list
-	url = git@github.com:ecioferraz/exercise-todo-list.git
-[submodule "front-end/exercises/15.3/portfolio-web"]
-	path = front-end/exercises/15.3/portfolio-web
-	url = git@github.com:ecioferraz/exercise-portfolio-web.git
