@@ -9,10 +9,8 @@
 	url = git@github.com:ecioferraz/exercise-todo-list.git
 [submodule "front-end/exercises/front-end/exercises/15.2/exercise-digimon-finder"]
 	path = front-end/exercises/front-end/exercises/15.2/exercise-digimon-finder
-	url = git@github.com:ecioferraz/exercise-portfolio-web.git
+	url = git@github.com:ecioferraz/exercise-digimon-finders.git
 [submodule "front-end/exercises/15.3/exercise-portfolio-web"]
 	path = front-end/exercises/15.3/exercise-portfolio-web
 	url = git@github.com:ecioferraz/exercise-portfolio-web.git
-[submodule "front-end/exercises/15.3/exercise_portfolio_web"]
-	path = front-end/exercises/15.3/exercise_portfolio_web
-	url = git@github.com:ecioferraz/exercise-portfolio-web.git
+
