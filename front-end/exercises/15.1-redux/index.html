@@ -31,6 +31,7 @@
       <p>Color: <span id="value">white</span></p>
       <button id="previous">Previous color</button>
       <button id="next">Next color</button>
+      <button id="random">Random color</button>
     </div>
     <script>
       const ESTADO_INICIAL = {
@@ -40,8 +41,10 @@
 
       const PREVIOUS_COLOR = "PREVIOUS_COLOR";
       const NEXT_COLOR = "NEXT_COLOR";
+      const RANDOM_COLOR = "RANDOM_COLOR";
       const PREVIOUS_ACTION = { type: PREVIOUS_COLOR };
       const NEXT_ACTION = { type: NEXT_COLOR };
+      const RANDOM_ACTION = { type: RANDOM_COLOR };
 
       function colorReducer(state = ESTADO_INICIAL, action) {
         switch(action.type) {
@@ -55,6 +58,11 @@
                 ...state,
                 index: state.index === state.colors.length - 1 ? 0 : state.index + 1,
               };
+            case RANDOM_COLOR:
+              return {
+                ...state,
+                index: Math.floor(Math.random() * state.colors.length),
+              };
           default:
             return state;
         }
@@ -65,10 +73,14 @@
       document.getElementById('previous')
         .addEventListener('click', () =>
           store.dispatch(PREVIOUS_ACTION));
-          
+
       document.getElementById('next')
         .addEventListener('click', () =>
           store.dispatch(NEXT_ACTION));
+
+      document.getElementById('random')
+        .addEventListener('click', () =>
+          store.dispatch(RANDOM_ACTION));
 
       store.subscribe(() => {
         const { colors, index } = store.getState();
