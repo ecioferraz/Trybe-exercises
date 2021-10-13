@@ -62,7 +62,7 @@ class Register extends Component {
             onChange={ this.handleChange }
           />
         </label>
-        <Link to="/registeredusers" onClick={ this.handleClick }>
+        <Link to="/registeredclients" onClick={ this.handleClick }>
           <button type="button">
             Cadastrar
           </button>
