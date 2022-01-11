@@ -28,7 +28,7 @@ const start = async () => {
 
   const oldWord = await question('Qual palavra deseja substituir? ');
   const newWord = await question('Qual a nova palavra? ');
-  const replaceWord = fileContent.replace(oldWord, newWord);
+  const replaceWord = fileContent.replace(new RegExp(oldWord, 'g'), newWord);
   console.log(`Resultado: ${replaceWord}`);
 
   const saveNewContent = await question('Onde salvar novo arquivo? ');
