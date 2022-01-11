@@ -1,0 +1,11 @@
+{
+  "name": "22.2-nodejs-fluxo-assincrono",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ex01.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ecio Ferraz <ecioferraz@hotmail.com>",
+  "license": "ISC"
+}
