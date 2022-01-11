@@ -44,4 +44,18 @@ describe('Checks the naturalNum function', () => {
       expect(answer).to.be.eq('Neutro');
     });
   })
+
+  describe('Checks when the parameter is not a number', () => {
+    it('tests if the answer is a string', () => {
+      const answer = naturalNum('not-a-number');
+
+      expect(answer).to.be.a('string');
+    });
+
+    it('tests if the answer is "not-a-number não é um número."', () => {
+      const answer = naturalNum('not-a-number');
+
+      expect(answer).to.be.eq('not-a-number não é um número.');
+    })
+  })
 })
