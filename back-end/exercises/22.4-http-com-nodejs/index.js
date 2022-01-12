@@ -12,6 +12,15 @@ app.post('/hello', (req, res) => {
   res.status(201).json({ message: `Hello, ${name}` });
 });
 
+// ex 03
+app.post('/greetings', (req, res) => {
+  const { name, age } = req.body;
+
+  if (Number(age) < 18) return res.status(401).json({ message: 'Unauthorized' });
+
+  res.status(200).json({ message: `Hello, ${name}` });
+});
+
 // ex 01
 app.get('/ping', (_req, res) => res.json({ message: 'pong' }));
 
