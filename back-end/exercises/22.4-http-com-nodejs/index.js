@@ -56,7 +56,6 @@ app.post('/simpsons', rescue(async (req, res) => {
   if (isSimpson) return res.status(409).json({ message: 'Id already exists!' });
 
   simpsons.push({ id, name });
-  console.log(simpsons);
   await setSimpsons(simpsons);
 
   res.status(204).end();
