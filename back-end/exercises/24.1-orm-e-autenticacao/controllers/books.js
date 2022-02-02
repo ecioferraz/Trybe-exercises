@@ -1,16 +1,16 @@
 const { Book } = require('../src/models');
 
+const errMessage = { message: 'Something went wrong!' };
+
 const getAll = async (_req, res) => {
   try {
-    const books = await Book.findAll({
-      order: [ ['title', 'ASC'], ['createdAt', 'ASC'] ]
-    });
+    const books = await Book.findAll();
 
     res.status(200).json(books);
-  } catch (e) {
-    console.log(e.message);
-    res.status(500).json({ message: 'Algo deu errado' });
-  }
+  } catch (err) {
+    console.log(err.message);
+    res.status(500).json(errMessage);
+  };
 };
 
 const getById = async (req, res) => {
@@ -19,67 +19,58 @@ const getById = async (req, res) => {
     const books = await Book.findByPk(id);
 
     res.status(200).json(books);
-  } catch (e) {
-    console.log(e.message);
-    res.status(500).json({ message: 'Algo deu errado' });
+  } catch (err) {
+    console.log(err.message);
+    res.status(500).json(errMessage);
   }
 };
 
-const createNew = async (req, res) => {
+const createBook = async (req, res) => {
   try {
     const { title, author, pageQuantity = 0 } = req.body;
 
-    const book = await Book.create({
-      title,
-      author,
-      pageQuantity,
-    });
+    const book = await Book.create({ title, author, pageQuantity });
 
     res.status(201).json(book);
-  } catch (e) {
-    console.log(e.message);
-    res.status(500).json({ message: 'Algo deu errado' });
-  }
-};
-
-const updateById = async (req, res) => {
-  try {
-    const { title, author, pageQuantity = 0 } = req.body;
-    const { id } =  req.params;
-
-    const result = await Book.update(
-      {
-        title,
-        author,
-        pageQuantity,
-      },
-      { where: { id } },
-    );
-
-    res.status(200).json(result);
   } catch (err) {
-    console.log(e.message);
-    res.status(500).json({ message: 'Algo deu errado' });
+    console.log(err.message);
+    res.status(500).json(errMessage);
   }
 };
 
-const deleteById = async (req, res) => {
+const updateBook = async (req, res) => {
   try {
     const { id } = req.params;
-    const bookToDelete = await Book.findByPk(id);
-    await bookToDelete.destroy();
+    const { title, author, pageQuantity = 0 } = req.body;
 
-    res.status(200).json(bookToDelete);
-  } catch (e) {
-    console.log(e.message);
-    res.status(500).json({ message: 'Algo deu errado' });
-  }
+    const book = await Book.update({
+      title, author, pageQuantity
+    }, { where: { id } });
+
+    res.status(200).json(book);
+  } catch (err) {
+    console.log(err.message);
+    res.status(500).json(errMessage);
+  };
 };
 
-module.exports = {
-  deleteById,
+const deleteBook = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const book = await Book.findByPk(id);
+    await book.destroy();
+
+    res.status(200).json(book);
+  } catch (err) {
+    console.log(err.message);
+    res.status(500).json(errMessage);
+  };
+}
+
+module.exports ={
   getAll,
   getById,
-  updateById,
-  createNew,
+  createBook,
+  updateBook,
+  deleteBook,
 };
