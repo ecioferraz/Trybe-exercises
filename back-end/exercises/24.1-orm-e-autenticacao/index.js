@@ -1,19 +1,19 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-
-const booksController = require('./controllers/books');
-const authorController = require('./controllers/author');
+const Books = require('./controllers/books');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
 
+app.use(express.json());
 app.use(bodyParser.json());
 
-app.get('/books', booksController.getAll);
-app.get('/book/:id', booksController.getById);
-app.get('/author/:name', authorController.getByAuthorName);
-app.post('/book', booksController.createNew);
-app.post('/book/:id', booksController.updateById);
-app.delete('/book/:id', booksController.deleteById);
+app.get('/books', Books.getAll);
 
-app.listen(PORT);
+app.route('/book/:id')
+.get(Books.getById)
+.post(Books.updateBook)
+.delete(Books.deleteBook);
+
+app.post('/book', Books.createBook);
+
+app.listen(3000);
