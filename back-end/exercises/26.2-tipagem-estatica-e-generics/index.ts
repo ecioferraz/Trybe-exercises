@@ -1,5 +1,5 @@
-import { exit } from "process";
 import rl from 'readline-sync'
+import { exit } from "process";
 import { months } from "./months";
 import { seasons } from "./seasons";
 
