@@ -1,14 +1,21 @@
 import { Request, Response } from 'express';
-import { BaseRestaurant, Restaurant } from '../interfaces/restaurant';
+import { RestaurantInfo } from '../interfaces';
 import { RestaurantServices } from '../services';
 
 const create = async (req: Request, res: Response) => {
-  const { name, foodType }: BaseRestaurant = req.body;
-  const newRestaurant: Promise<Restaurant> = await RestaurantServices.create({ name, foodType });
+  const restaurant: RestaurantInfo = req.body;
+  const newRestaurant = await RestaurantServices.create(restaurant);
 
   return res.status(201).json(newRestaurant);
 };
 
+const getAll = async (_req: Request, res: Response) => {
+  const restaurants = await RestaurantServices.getAll();
+
+  return res.status(200).json(restaurants);
+};
+
 export default {
   create,
+  getAll,
 };

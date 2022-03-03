@@ -1,15 +1,23 @@
-import fs from 'fs/promises';
-import { read } from '../functions';
-import { BaseRestaurant, Restaurant } from "../interfaces/restaurant";
+import { read, write } from '../functions';
+import { Restaurant, RestaurantInfo } from "../interfaces";
 
-const create = async ({ name, foodType }: BaseRestaurant): Promise<Restaurant> => {
+const create = async (restaurant: RestaurantInfo): Promise<Restaurant> => {
   const restaurants = await read();
 
-  restaurants.push({ name, foodType });
+  const id = restaurants[restaurants.length - 1].id;
 
-  await fs.writeFile(restaurants);
+  const newRestaurant = { id, ...restaurant };
+
+  restaurants.push(newRestaurant);
+
+  await write(restaurants);
+
+  return newRestaurant;
 };
+
+const getAll = async (): Promise<Restaurant[]> => read();
 
 export default {
   create,
+  getAll,
 };

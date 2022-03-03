@@ -1,8 +1,8 @@
 import fs from 'fs/promises';
-import { Restaurant } from './interfaces/restaurant';
+import { Restaurant } from './interfaces';
 
 const read = async (): Promise<Restaurant[]> => {
-  const data = await fs.readFile('./restaurants.json', 'utf8');
+  const data = await fs.readFile('./static/restaurants.json', 'utf8');
 
   const restaurants: Restaurant[] = JSON.parse(data);
 
@@ -10,7 +10,7 @@ const read = async (): Promise<Restaurant[]> => {
 };
 
 const write = async (data: Restaurant[]): Promise<void> =>
-  await fs.writeFile('./restaurants.json', JSON.stringify(data));
+  await fs.writeFile('./static/restaurants.json', JSON.stringify(data));
 
 export {
   read,
