@@ -1,5 +1,5 @@
-import Restaurant from './restaurant';
+import RestaurantController from './restaurant';
 
-export default {
-  Restaurant,
+export {
+  RestaurantController,
 };

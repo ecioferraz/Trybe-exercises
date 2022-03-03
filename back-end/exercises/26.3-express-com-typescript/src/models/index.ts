@@ -1,5 +1,5 @@
 import RestaurantModel from './restaurant';
 
-export default {
+export {
   RestaurantModel,
 };
