@@ -59,8 +59,7 @@ class Student {
     }
 }
 
-const student1 = new Student(200810327, 'Écio');
-const student2 = new Student(200810328, 'Idk');
+const student1 = new Student(123456789, 'Écio');
 
 student1.grades = [10, 8, 9, 10];
 student1.workpapers = [10, 10];
