@@ -8,7 +8,7 @@ const student1 = new Student('Britney', new Date('1981/12/02'));
 const subject1 = new Subject('Math');
 const subject2 = new Subject('History');
 const subject3 = new Subject('Philosophy');
-const teacher1 = new Teacher('Marcia', new Date('1992/03/16'), 2003, subject1)
+const teacher1 = new Teacher('Marcia', new Date('1992/03/16'), 2003, subject1);
 
 
 student1.grades = [10, 8, 9, 10];
