@@ -1,0 +1,16 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+// import Person from "./classes/Person";
+var Student_1 = require("./classes/Student");
+var Subject_1 = require("./classes/Subject");
+var Teacher_1 = require("./classes/Teacher");
+var student1 = new Student_1.default('Marcia', new Date('1992/03/16'));
+var subject1 = new Subject_1.default('Dance');
+var teacher1 = new Teacher_1.default('Britney', new Date('1981/12/02'), 2000000, subject1);
+student1.examsGrades = [10, 8, 9, 10];
+student1.workpapersGrades = [10, 10];
+console.log(student1);
+console.log(student1.sumGrades());
+console.log(student1.gradesAverage());
+console.log(subject1);
+console.log(teacher1);
