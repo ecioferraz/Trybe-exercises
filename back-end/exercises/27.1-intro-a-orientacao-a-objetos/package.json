@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx tsc -t es5 ./diner/Diner.ts && node ./diner/Diner.js"
+    "start": "npx tsc -t es5 ./dateFormat/Date.ts && node ./dateFormat/Date.js"
   },
   "keywords": [],
   "author": "",
