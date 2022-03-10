@@ -1,7 +1,7 @@
 // import Person from "./classes/Person";
-import Student from "./classes/Student";
-import Subject from "./classes/Subject";
-import Teacher from "./classes/Teacher";
+import Student from "./course/classes/Student";
+import Subject from "./course/classes/Subject";
+import Teacher from "./course/classes/Teacher";
 
 const student1 = new Student('Marcia', new Date('1992/03/16'));
 const subject1 = new Subject('Dance');

@@ -24,25 +24,9 @@ export default class Student extends Person implements IEnrollable {
     return this._evaluationsResult;
   }
 
-  // get examsGrades(): number[] {
-  //   return this._examsGrades;
-  // }
-
-  // set examsGrades(eG: number[]) {
-  //   (eG.length > 4) ? console.log('A pessoa estudante só pode possuir 4 notas de provas.') : this._examsGrades = eG;
-  // }
-
-  // get workpapersGrades(): number[] {
-  //   return this._workpapersGrades;
-  // }
-
-  // set workpapersGrades(wG: number[]) {
-  //   (wG.length > 2) ? console.log('A pessoa estudante só pode possuir 2 notas de trabalho.') : this._workpapersGrades = wG;
-  // }
-
-  // sumGrades() {
-  //   return [...this._examsGrades, ...this._workpapersGrades].reduce((acc, curr) => acc += curr);
-  // }
+  sumGrades(): number {
+    return [...this._evaluationsResult].reduce((acc, curr) => acc + curr, 0);
+  }
 
   // gradesAverage() {
   //   const sumAllGrades = this.sumGrades();
