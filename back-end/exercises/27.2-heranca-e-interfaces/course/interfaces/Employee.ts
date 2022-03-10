@@ -1,7 +1,7 @@
 export default interface Employee {
-  enrollment: string;
+  registration: string;
   salary: number;
   admissionDate: Date;
 
-  generateEnrollment(): string;
+  generateRegistration(): string;
 }
