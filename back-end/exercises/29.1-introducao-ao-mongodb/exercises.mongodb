@@ -20,7 +20,10 @@ use('class')
 
 db.books.countDocuments()
 
-db.books.find({ status: 'PUBLISH' }).count();
-// db.books.countDocuments().find({ status: 'PUBLISH' });
+db.books.find({ status: 'PUBLISH' }).count()
+// db.books.countDocuments().find({ status: 'PUBLISH' })
 
-
+db.books.find(
+  {},
+  { title: 1, isbn: 1, pageCount: 1, _id: 0 },
+).limit(3)
