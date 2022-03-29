@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Client_1 = require("./Client");
+var ItemOrder_1 = require("./ItemOrder");
+var Order_1 = require("./Order");
+var client = new Client_1.default('Écio');
+var newOrder = [new ItemOrder_1.default('Coxinha', 4), new ItemOrder_1.default('Coca-cola', 6)];
+var order = new Order_1.default(client, newOrder, 'débito', 0.1);
+console.log(order);
+console.log("Valor normal: ".concat(order.getTotal()));
+console.log("Valor com desconto: ".concat(order.totalWithDiscount()));

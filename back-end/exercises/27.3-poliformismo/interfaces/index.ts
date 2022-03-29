@@ -1,5 +1,5 @@
-import IEnrollable from "./Enrollable";
+import Employee from "./Employee";
 
 export {
-  IEnrollable,
+  Employee,
 }
