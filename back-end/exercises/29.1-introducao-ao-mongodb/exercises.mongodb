@@ -15,6 +15,7 @@ db.bios.find().limit(3).pretty()
 
 db.bios.find().skip(5).limit(2)
 
+// mongoimport --db class --collection books <caminho_do_arquivo>
 use('class')
 
 db.books.countDocuments()
