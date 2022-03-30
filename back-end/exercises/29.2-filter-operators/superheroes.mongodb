@@ -32,3 +32,13 @@ db.superheroes.find({
     { 'aspects.height': { $gt: 180 } },
   ],
 })
+
+db.superheroes.find({
+  $and: [
+    { $or: [
+      { 'aspects.height': 180 },
+      { 'aspects.height': 200 },
+    ]},
+    { publisher: 'Marvel Comics' },
+  ],
+})
