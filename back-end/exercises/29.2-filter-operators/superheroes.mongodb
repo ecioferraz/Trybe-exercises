@@ -51,4 +51,10 @@ db.superheroes.find({
   ],
 })
 
+db.superheroes.countDocuments({ race: { $exists: false } })
 
+db.superheroes.countDocuments({ 'aspects.hairColor': { $exists: true } })
+
+// db.superheroes.deleteOne({ publisher: 'Sony Pictures' })
+
+db.superheroes.deleteMany({ publisher: 'George Lucas' })
