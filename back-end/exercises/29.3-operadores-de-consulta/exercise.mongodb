@@ -66,3 +66,7 @@ db.movies.find({
     { imdbRating: { $not: { $lt: 7 } } },
   ]
 })
+
+db.movies.find({ description: { $regex: /^The/ } })
+
+
