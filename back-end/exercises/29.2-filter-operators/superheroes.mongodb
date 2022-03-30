@@ -3,3 +3,15 @@ use('class')
 db.superheroes.countDocuments()
 
 db.superheroes.findOne()
+
+db.superheroes.find({ 'aspects.height': { $lt: 180 } })
+
+db.superheroes.countDocuments({ 'aspects.height': { $lt: 180 } })
+
+db.superheroes.countDocuments({ 'aspects.height': { $lte: 180 } })
+
+db.superheroes.findOne({ 'aspects.height': { $gte: 200 } })
+
+db.superheroes.countDocuments({ 'aspects.height': { $gte: 200 } })
+
+db.superheroes.find({ 'aspects.eyeColor': 'green' })
