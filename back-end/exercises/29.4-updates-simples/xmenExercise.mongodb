@@ -54,10 +54,30 @@ db.xmen.updateMany(
   },
 )
 
+// db.xmen.updateMany(
+//   { class: { $exists: false } },
+//   {
+//     $inc: { power: -100 },
+//     $currentDate: {
+//       lastUpdate: {
+//         $type: 'timestamp',
+//       },
+//     },
+//   },
+// )
+
 db.xmen.updateMany(
-  { class: { $exists: false } },
-  {
-    $inc: { power: -100 },
+  { $or: [
+    {
+      occupation: 'Senior Staff',
+      power: { $gt: 100 },
+    },
+    {
+      occupation: 'Junior Staff',
+      power: { $gt: 200 },
+    },
+  ] }, {
+    $set: { areas: ['Student Room'] },
     $currentDate: {
       lastUpdate: {
         $type: 'timestamp',
@@ -65,3 +85,5 @@ db.xmen.updateMany(
     },
   },
 )
+
+
