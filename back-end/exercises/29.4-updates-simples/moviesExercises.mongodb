@@ -59,6 +59,10 @@ db.movies.updateOne(
   },
 )
 
-db.movies.updateMany( {}, { $set: { sequels: 0 } })
+db.movies.updateMany({}, { $set: { sequels: 0 } })
 
+db.movies.updateMany(
+  {},
+  { $unset: { estimatedBudget: '', budget: '' } }
+)
 
