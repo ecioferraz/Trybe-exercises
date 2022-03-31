@@ -17,4 +17,7 @@ db.movies.updateOne(
   { $set: { budget: 15, imdbRating: 5.5 } },
 )
 
-
+db.movies.updateOne(
+  { title: 'Batman' },
+  { $inc: { budget: 5 } },
+)
