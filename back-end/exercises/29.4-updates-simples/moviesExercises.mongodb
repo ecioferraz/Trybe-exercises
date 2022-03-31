@@ -6,3 +6,8 @@ db.movies.updateOne(
   { title: 'Batman' },
   { $set: { imdbRating: 7.7 } },
 )
+
+db.movies.updateOne(
+  { title: 'Godzilla' },
+  { $set: { budget: 1 } },
+)
