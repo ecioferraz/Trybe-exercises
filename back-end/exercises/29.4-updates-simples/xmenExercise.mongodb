@@ -1,0 +1,15 @@
+use('class')
+
+db.xmen.find()
+
+db.xmen.updateMany(
+  { class: 'unknown' },
+  {
+    $unset: { class: '' },
+    $currentDate: {
+      lastUpdate: {
+        $type: 'timestamp',
+      },
+    },
+  },
+)
