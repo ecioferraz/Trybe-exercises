@@ -78,17 +78,53 @@ db.movies.updateOne(
   },
 )
 
+// db.movies.updateOne(
+//   { title: 'Batman' },
+//   {
+//     $push: {
+//       cast: {
+//         $each: [
+//           { character: 'Batman' },
+//           { character: 'Alfred' },
+//           { character: 'Coringa' },
+//         ],
+//       },
+//     },
+//   },
+// )
+
 db.movies.updateOne(
-  { title: 'Batman' },
+  {
+    title: 'Batman',
+    'cast.character': 'Batman',
+  },
   {
     $push: {
-      cast: {
-        $each: [
-          { character: 'Batman' },
-          { character: 'Alfred' },
-          { character: 'Coringa' },
-        ],
-      },
+      'cast.$.actor': 'Christian Bale',
+    },
+  },
+)
+
+db.movies.updateOne(
+  {
+    title: 'Batman',
+    'cast.character': 'Alfred',
+  },
+  {
+    $push: {
+      'cast.$.actor': 'Michael Caine',
+    },
+  },
+)
+
+db.movies.updateOne(
+  {
+    title: 'Batman',
+    'cast.character': 'Coringa',
+  },
+  {
+    $push: {
+      'cast.$.actor': 'Heath Ledger',
     },
   },
 )
