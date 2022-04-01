@@ -7,15 +7,18 @@ db.movies.find()
 //   { $push: { category: 'superhero' } },
 // )
 
+// db.movies.updateOne(
+//   { title: 'Batman' },
+//   {
+//     $push: {
+//       category: {
+//         $each: ['villain', 'comic-based'],
+//       },
+//     },
+//   },
+// )
+
 db.movies.updateOne(
   { title: 'Batman' },
-  {
-    $push: {
-      category: {
-        $each: ['villain', 'comic-based'],
-      },
-    },
-  },
+  { $pull: { category: 'action' } },
 )
-
-
