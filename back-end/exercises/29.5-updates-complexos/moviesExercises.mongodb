@@ -23,7 +23,12 @@ db.movies.find()
 //   { $pull: { category: 'action' } },
 // )
 
+// db.movies.updateOne(
+//   { title: 'Batman' },
+//   { $pop: { category: -1 } },
+// )
+
 db.movies.updateOne(
   { title: 'Batman' },
-  { $pop: { category: -1 } },
+  { $pop: { category: 1 } },
 )
