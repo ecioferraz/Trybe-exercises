@@ -18,7 +18,12 @@ db.movies.find()
 //   },
 // )
 
+// db.movies.updateOne(
+//   { title: 'Batman' },
+//   { $pull: { category: 'action' } },
+// )
+
 db.movies.updateOne(
   { title: 'Batman' },
-  { $pull: { category: 'action' } },
+  { $pop: { category: -1 } },
 )
