@@ -36,4 +36,12 @@ export default class TournamentService {
 
     return tournament;
   }
+
+  public async getByRunnerUp(runnerUp: string): Promise<ITournament | null | IError> {
+    const tournament = await this.tournamentModel.getByRunnerUp(runnerUp);
+
+    if (!tournament) return { code: StatusCode.NOT_FOUND, message: `${runnerUp} was never a runner up.` };
+
+    return tournament;
+  }
 }
