@@ -13,4 +13,6 @@ routes.route('/:year')
   .put(tournamentController.update)
   .delete(tournamentController.delete);
 
+routes.get('/runnerUp/:country', tournamentController.getByRunnerUp);
+
 export default routes;

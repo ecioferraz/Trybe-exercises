@@ -57,4 +57,15 @@ export default class TournamentController {
       next(error);
     }
   }
+
+  public getByRunnerUp = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const { country } = req.params;
+      const tournament = await this.tournamentService.getByRunnerUp(country);
+
+      return res.status(StatusCode.OK).json(tournament);
+    } catch (error: unknown) {
+      next(error);
+    }
+  }
 }

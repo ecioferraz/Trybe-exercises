@@ -28,4 +28,8 @@ export default class TournamentModel {
   public async delete(year: number): Promise<ITournament | null> {
     return this.tournamentModel.findOneAndDelete({ year });
   }
+
+  public async getByRunnerUp(runnerUp: string): Promise<ITournament | null> {
+    return this.tournamentModel.findOne({ runnerUp });
+  }
 }
