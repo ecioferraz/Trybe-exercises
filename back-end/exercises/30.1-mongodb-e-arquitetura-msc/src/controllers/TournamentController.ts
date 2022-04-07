@@ -25,4 +25,14 @@ export default class TournamentController {
       next(error);
     }
   }
+
+  public create = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const tournament = await this.tournamentService.create(req.body);
+
+      return res.status(StatusCode.CREATED).json(tournament);
+    } catch (error: unknown) {
+      next(error);
+    }
+  }
 }

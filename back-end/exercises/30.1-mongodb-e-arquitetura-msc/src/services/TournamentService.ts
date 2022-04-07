@@ -16,4 +16,8 @@ export default class TournamentService {
 
     return tournaments;
   }
+
+  public async create(tournamentData: ITournament): Promise<ITournament> {
+    return this.tournamentModel.create(tournamentData);
+  }
 }

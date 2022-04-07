@@ -3,7 +3,7 @@ export default interface ITournament {
   hostCountry: string,
   champions: string,
   runnerUp: string,
-  editionGoals: number,
+  editionGoals?: number,
   editionStrikers: string[],
   bestPlayer: string,
   bestGoalkeeper?: string,

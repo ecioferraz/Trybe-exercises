@@ -5,7 +5,8 @@ const tournamentController = new TournamentController();
 const routes = Router();
 
 routes.route('/')
-  .get(tournamentController.getAll);
+  .get(tournamentController.getAll)
+  .post(tournamentController.create);
 
 routes.route('/:year')
   .get(tournamentController.getByYear);
