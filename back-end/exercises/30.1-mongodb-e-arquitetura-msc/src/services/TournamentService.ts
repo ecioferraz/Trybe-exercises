@@ -20,4 +20,12 @@ export default class TournamentService {
   public async create(tournamentData: ITournament): Promise<ITournament> {
     return this.tournamentModel.create(tournamentData);
   }
+
+  public async update(year: number, tournamentData: ITournament): Promise<ITournament | null | IError> {
+    const tournaments = await this.tournamentModel.update(year, tournamentData);
+
+    if (!tournaments) return { code: StatusCode.NOT_FOUND, message: 'There was no cup that year' };
+
+    return tournaments;
+  }
 }

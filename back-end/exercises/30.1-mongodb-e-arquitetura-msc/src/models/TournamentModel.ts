@@ -16,4 +16,12 @@ export default class TournamentModel {
   public async create(tournamentData: ITournament): Promise<ITournament> {
     return this.tournamentModel.create(tournamentData);
   }
+
+  public async update(year: number, tournamentData: ITournament): Promise<ITournament | null> {
+    return this.tournamentModel.findOneAndUpdate(
+      { year },
+      { ...tournamentData},
+      { new: true },
+      );
+  }
 }

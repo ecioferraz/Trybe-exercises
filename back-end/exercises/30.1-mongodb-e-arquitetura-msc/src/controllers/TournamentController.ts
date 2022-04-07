@@ -35,4 +35,15 @@ export default class TournamentController {
       next(error);
     }
   }
+
+  public update = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const { year } = req.params;
+      const tournament = await this.tournamentService.update(+year, req.body);
+
+      return res.status(StatusCode.OK).json(tournament);
+    } catch (error: unknown) {
+      next(error);
+    }
+  }
 }
