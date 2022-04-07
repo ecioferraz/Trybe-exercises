@@ -1,17 +1,7 @@
 import { Schema } from 'mongoose';
 import { ITournament } from '../interfaces';
 
-export const TournamentSchema = new Schema<ITournament>({
-  year: { type: Number, required: true },
-  hostCountry: { type: String, required: true },
-  champions: { type: String, required: true },
-  runnerUp: { type: String, required: true },
-  editionGoals: { type: Number, required: false },
-  editionStrikers: { type: [{ type: String }], required: true },
-  bestPlayer: { type: String, required: true },
-  bestGoalkeeper: { type: String },
-  bestYoungPlayer: { type: String, required: true },
-})
+export const TournamentSchema = new Schema<ITournament>()
 
 /* Schema from course's answer
 import { Schema, Document, Types } from 'mongoose';
