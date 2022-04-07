@@ -46,4 +46,15 @@ export default class TournamentController {
       next(error);
     }
   }
+
+  public delete = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const { year } = req.params;
+      const tournament = await this.tournamentService.delete(+year);
+
+      return res.status(StatusCode.OK).json(tournament);
+    } catch (error: unknown) {
+      next(error);
+    }
+  }
 }

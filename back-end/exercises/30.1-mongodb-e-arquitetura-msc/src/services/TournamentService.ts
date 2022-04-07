@@ -22,10 +22,18 @@ export default class TournamentService {
   }
 
   public async update(year: number, tournamentData: ITournament): Promise<ITournament | null | IError> {
-    const tournaments = await this.tournamentModel.update(year, tournamentData);
+    const tournament = await this.tournamentModel.update(year, tournamentData);
 
-    if (!tournaments) return { code: StatusCode.NOT_FOUND, message: 'There was no cup that year' };
+    if (!tournament) return { code: StatusCode.NOT_FOUND, message: 'There was no cup that year' };
 
-    return tournaments;
+    return tournament;
+  }
+
+  public async delete(year: number): Promise<ITournament | null | IError> {
+    const tournament = await this.tournamentModel.delete(year);
+
+    if (!tournament) return { code: StatusCode.NOT_FOUND, message: 'There was no cup that year' };
+
+    return tournament;
   }
 }

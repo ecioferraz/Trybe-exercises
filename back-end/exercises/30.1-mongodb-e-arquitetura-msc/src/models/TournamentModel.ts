@@ -24,4 +24,8 @@ export default class TournamentModel {
       { new: true },
       );
   }
+
+  public async delete(year: number): Promise<ITournament | null> {
+    return this.tournamentModel.findOneAndDelete({ year });
+  }
 }

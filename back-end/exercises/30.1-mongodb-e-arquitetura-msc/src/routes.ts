@@ -10,6 +10,7 @@ routes.route('/')
 
 routes.route('/:year')
   .get(tournamentController.getByYear)
-  .put(tournamentController.update);
+  .put(tournamentController.update)
+  .delete(tournamentController.delete);
 
 export default routes;
