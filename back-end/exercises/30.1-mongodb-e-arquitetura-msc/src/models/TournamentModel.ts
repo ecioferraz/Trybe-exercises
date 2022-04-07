@@ -8,4 +8,8 @@ export default class TournamentModel {
   public async getAll(): Promise<ITournament[]> {
     return this.tournamentModel.find();
   }
+
+  public async getByYear(year: number): Promise<ITournament | null> {
+    return this.tournamentModel.findOne({ year });
+  }
 }

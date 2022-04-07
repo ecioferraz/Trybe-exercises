@@ -9,7 +9,18 @@ export default class TournamentController {
     try {
       const tournaments = await this.tournamentService.getAll();
 
-      return res.status(StatusCode.OK).send(tournaments);
+      return res.status(StatusCode.OK).json(tournaments);
+    } catch (error: unknown) {
+      next(error);
+    }
+  }
+
+  public getByYear = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const { year } = req.params;
+      const tournament = await this.tournamentService.getByYear(+year);
+
+      return res.status(StatusCode.OK).json(tournament);
     } catch (error: unknown) {
       next(error);
     }

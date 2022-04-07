@@ -7,4 +7,7 @@ const routes = Router();
 routes.route('/')
   .get(tournamentController.getAll);
 
+routes.route('/:year')
+  .get(tournamentController.getByYear);
+
 export default routes;
