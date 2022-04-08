@@ -1,0 +1,11 @@
+use('TrybeStore');
+
+db.RecordStore.insertOne({
+  artist: "Mamonas Assassinas",
+  title: "Pelados em Santos",
+  format: "CD",
+  yearPublished: 1995,
+  new: false,
+});
+
+db.RecordStore.find();
