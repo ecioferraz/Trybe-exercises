@@ -8,7 +8,7 @@ const RecordSchema = z.object({
   new: z.boolean(),
 });
 
-type Record = z.infer<typeof RecordSchema>;
+type IRecord = z.infer<typeof RecordSchema>;
 
-export default Record;
+export default IRecord;
 export { RecordSchema };
