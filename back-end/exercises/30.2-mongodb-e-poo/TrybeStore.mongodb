@@ -1,6 +1,6 @@
 use('TrybeStore');
 
-db.RecordStore.insertOne({
+db.recordstores.insertOne({
   artist: "Mamonas Assassinas",
   title: "Pelados em Santos",
   format: "CD",
@@ -8,4 +8,4 @@ db.RecordStore.insertOne({
   new: false,
 });
 
-db.RecordStore.find();
+db.recordstores.find();

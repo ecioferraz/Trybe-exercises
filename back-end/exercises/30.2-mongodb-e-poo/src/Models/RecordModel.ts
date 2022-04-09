@@ -14,6 +14,6 @@ const recordSchema = new Schema<IRecordDocument>({
 
 export default class RecordModel extends MongoModel<IRecord> {
   constructor() {
-    super(createModel('RecordStore', recordSchema));
+    super(createModel('recordstores', recordSchema));
   }
 }
