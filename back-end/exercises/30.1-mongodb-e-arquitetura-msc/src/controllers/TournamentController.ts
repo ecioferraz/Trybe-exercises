@@ -3,11 +3,11 @@ import { StatusCode } from '../enums/StatusCode';
 import TournamentService from '../services/TournamentService';
 
 export default class TournamentController {
-  constructor(public service = new TournamentService()) {}
+  constructor(private tournamentService = new TournamentService()) {}
 
   public getAll = async (_req: Request, res: Response, next: NextFunction) => {
     try {
-      const tournaments = await this.service.getAll();
+      const tournaments = await this.tournamentService.getAll();
 
       return res.status(StatusCode.OK).json(tournaments);
     } catch (error: unknown) {
@@ -18,7 +18,7 @@ export default class TournamentController {
   public getByYear = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const { year } = req.params;
-      const tournament = await this.service.getByYear(+year);
+      const tournament = await this.tournamentService.getByYear(+year);
 
       return res.status(StatusCode.OK).json(tournament);
     } catch (error: unknown) {
@@ -28,7 +28,7 @@ export default class TournamentController {
 
   public create = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const tournament = await this.service.create(req.body);
+      const tournament = await this.tournamentService.create(req.body);
 
       return res.status(StatusCode.CREATED).json(tournament);
     } catch (error: unknown) {
@@ -39,7 +39,7 @@ export default class TournamentController {
   public update = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const { year } = req.params;
-      const tournament = await this.service.update(+year, req.body);
+      const tournament = await this.tournamentService.update(+year, req.body);
 
       return res.status(StatusCode.OK).json(tournament);
     } catch (error: unknown) {
@@ -50,7 +50,7 @@ export default class TournamentController {
   public delete = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const { year } = req.params;
-      const tournament = await this.service.delete(+year);
+      const tournament = await this.tournamentService.delete(+year);
 
       return res.status(StatusCode.OK).json(tournament);
     } catch (error: unknown) {
@@ -61,7 +61,7 @@ export default class TournamentController {
   public getByRunnerUp = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const { country } = req.params;
-      const tournament = await this.service.getByRunnerUp(country);
+      const tournament = await this.tournamentService.getByRunnerUp(country);
 
       return res.status(StatusCode.OK).json(tournament);
     } catch (error: unknown) {

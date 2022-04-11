@@ -9,7 +9,3 @@ export default interface ITournament {
   bestGoalkeeper?: string,
   bestYoungPlayer: string,
 }
-
-export interface ITournamentBase extends ITournament {
-  _id: string,
-}
