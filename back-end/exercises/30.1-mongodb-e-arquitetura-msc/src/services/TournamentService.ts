@@ -3,14 +3,14 @@ import { IError, ITournament } from "../interfaces";
 import { StatusCode } from "../enums/StatusCode";
 
 export default class TournamentService {
-  constructor(private tournamentModel = new TournamentModel()) {}
+  constructor(public model = new TournamentModel()) {}
 
   public async getAll(): Promise<ITournament[]> {
-    return this.tournamentModel.getAll();
+    return this.model.getAll();
   }
 
   public async getByYear(year: number): Promise<ITournament | null | IError> {
-    const tournaments = await this.tournamentModel.getByYear(year);
+    const tournaments = await this.model.getByYear(year);
 
     if (!tournaments) return { code: StatusCode.NOT_FOUND, message: 'There was no cup that year' };
 
@@ -18,11 +18,11 @@ export default class TournamentService {
   }
 
   public async create(tournamentData: ITournament): Promise<ITournament> {
-    return this.tournamentModel.create(tournamentData);
+    return this.model.create(tournamentData);
   }
 
   public async update(year: number, tournamentData: ITournament): Promise<ITournament | null | IError> {
-    const tournament = await this.tournamentModel.update(year, tournamentData);
+    const tournament = await this.model.update(year, tournamentData);
 
     if (!tournament) return { code: StatusCode.NOT_FOUND, message: 'There was no cup that year' };
 
@@ -30,7 +30,7 @@ export default class TournamentService {
   }
 
   public async delete(year: number): Promise<ITournament | null | IError> {
-    const tournament = await this.tournamentModel.delete(year);
+    const tournament = await this.model.delete(year);
 
     if (!tournament) return { code: StatusCode.NOT_FOUND, message: 'There was no cup that year' };
 
@@ -38,7 +38,7 @@ export default class TournamentService {
   }
 
   public async getByRunnerUp(runnerUp: string): Promise<ITournament | null | IError> {
-    const tournament = await this.tournamentModel.getByRunnerUp(runnerUp);
+    const tournament = await this.model.getByRunnerUp(runnerUp);
 
     if (!tournament) return { code: StatusCode.NOT_FOUND, message: `${runnerUp} was never a runner up.` };
 

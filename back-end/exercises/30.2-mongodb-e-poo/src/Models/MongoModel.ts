@@ -16,7 +16,7 @@ export default abstract class MongoModel<T> implements Model<T> {
     await this.model.updateMany(
       { $and: [
         { format: 'CD' },
-        { yearPublished: 1997 },
+        { yearPublished: { $lte: 1997 } },
       ] },
       { $set: { new: false } },
     );
@@ -24,7 +24,7 @@ export default abstract class MongoModel<T> implements Model<T> {
     return this.model.find(
       { $and: [
         { format: 'CD' },
-        { yearPublished: 1997 },
+        { yearPublished: { $lte: 1997 } },
       ] },
     );
   };
