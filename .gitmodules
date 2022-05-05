@@ -17,3 +17,6 @@
 [submodule "aceleração/01.1-variáveis-e-seus-tipos/acc-java-04-exercises-antecessor-sucessor"]
 	path = aceleração/01.1-variáveis-e-seus-tipos/acc-java-04-exercises-antecessor-sucessor
 	url = https://github.com/tryber/acc-java-04-exercises-antecessor-sucessor
+[submodule "aceleração/01.1-variáveis-e-seus-tipos/acc-java-04-exercises-calcula-area"]
+	path = aceleração/01.1-variáveis-e-seus-tipos/acc-java-04-exercises-calcula-area
+	url = https://github.com/tryber/acc-java-04-exercises-calcula-area
