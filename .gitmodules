@@ -14,3 +14,6 @@
 	path = front-end/exercises/15.3/exercise-portfolio-web
 	url = git@github.com:ecioferraz/exercise-portfolio-web.git
 
+[submodule "aceleração/01.1-variáveis-e-seus-tipos/acc-java-04-exercises-antecessor-sucessor"]
+	path = aceleração/01.1-variáveis-e-seus-tipos/acc-java-04-exercises-antecessor-sucessor
+	url = https://github.com/tryber/acc-java-04-exercises-calcula-area
