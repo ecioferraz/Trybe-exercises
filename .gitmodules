@@ -29,3 +29,6 @@
 [submodule "aceleração/01.1-variáveis-e-seus-tipos/acc-java-04-exercises-estado-lampada"]
 	path = aceleração/01.1-variáveis-e-seus-tipos/acc-java-04-exercises-estado-lampada
 	url = https://github.com/tryber/acc-java-04-exercises-estado-lampada
+[submodule "aceleração/01.1-variáveis-e-seus-tipos/acc-java-04-exercises-fatorial"]
+	path = aceleração/01.1-variáveis-e-seus-tipos/acc-java-04-exercises-fatorial
+	url = https://github.com/tryber/acc-java-04-exercises-fatorial
