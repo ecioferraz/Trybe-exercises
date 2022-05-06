@@ -20,3 +20,6 @@
 [submodule "aceleração/01.1-variáveis-e-seus-tipos/acc-java-04-exercises-calcula-area"]
 	path = aceleração/01.1-variáveis-e-seus-tipos/acc-java-04-exercises-calcula-area
 	url = https://github.com/tryber/acc-java-04-exercises-calcula-area
+[submodule "aceleração/01.1-variáveis-e-seus-tipos/acc-java-04-exercises-calcula-imc"]
+	path = aceleração/01.1-variáveis-e-seus-tipos/acc-java-04-exercises-calcula-imc
+	url = https://github.com/tryber/acc-java-04-exercises-calcula-imc
