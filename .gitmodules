@@ -38,3 +38,6 @@
 [submodule "aceleração/01.1-variáveis-e-seus-tipos/acc-java-04-exercises-do-while-conexao-discada"]
 	path = aceleração/01.1-variáveis-e-seus-tipos/acc-java-04-exercises-do-while-conexao-discada
 	url = https://github.com/tryber/acc-java-04-exercises-do-while-conexao-discada
+[submodule "aceleração/01.1-variáveis-e-seus-tipos/acc-java-04-exercises-for-numeros-pares"]
+	path = aceleração/01.1-variáveis-e-seus-tipos/acc-java-04-exercises-for-numeros-pares
+	url = https://github.com/tryber/acc-java-04-exercises-for-numeros-pares
