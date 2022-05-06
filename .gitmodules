@@ -26,3 +26,6 @@
 [submodule "aceleração/01.1-variáveis-e-seus-tipos/acc-java-04-exercises-converte-bytes"]
 	path = aceleração/01.1-variáveis-e-seus-tipos/acc-java-04-exercises-converte-bytes
 	url = https://github.com/tryber/acc-java-04-exercises-converte-bytes
+[submodule "aceleração/01.1-variáveis-e-seus-tipos/acc-java-04-exercises-estado-lampada"]
+	path = aceleração/01.1-variáveis-e-seus-tipos/acc-java-04-exercises-estado-lampada
+	url = https://github.com/tryber/acc-java-04-exercises-estado-lampada
