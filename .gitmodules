@@ -50,3 +50,6 @@
 [submodule "aceleração/01.3-finalmente-o-hello-world-em-java/acc-java-04-exercises-idade-em-dias"]
 	path = aceleração/01.3-finalmente-o-hello-world-em-java/acc-java-04-exercises-idade-em-dias
 	url = https://github.com/tryber/acc-java-04-exercises-idade-em-dias
+[submodule "aceleração/01.3-finalmente-o-hello-world-em-java/acc-java-04-exercises-media-anual"]
+	path = aceleração/01.3-finalmente-o-hello-world-em-java/acc-java-04-exercises-media-anual
+	url = https://github.com/tryber/acc-java-04-exercises-media-anual
