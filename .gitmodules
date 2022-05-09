@@ -47,3 +47,6 @@
 [submodule "aceleração/01.1-variáveis-e-seus-tipos/acc-java-04-exercises-while-desafio-numeros-aleatorios"]
 	path = aceleração/01.1-variáveis-e-seus-tipos/acc-java-04-exercises-while-desafio-numeros-aleatorios
 	url = https://github.com/tryber/acc-java-04-exercises-while-desafio-numeros-aleatorios
+[submodule "aceleração/01.3-finalmente-o-hello-world-em-java/acc-java-04-exercises-idade-em-dias"]
+	path = aceleração/01.3-finalmente-o-hello-world-em-java/acc-java-04-exercises-idade-em-dias
+	url = https://github.com/tryber/acc-java-04-exercises-idade-em-dias
