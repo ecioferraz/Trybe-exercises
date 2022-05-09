@@ -41,3 +41,9 @@
 [submodule "aceleração/01.1-variáveis-e-seus-tipos/acc-java-04-exercises-for-numeros-pares"]
 	path = aceleração/01.1-variáveis-e-seus-tipos/acc-java-04-exercises-for-numeros-pares
 	url = https://github.com/tryber/acc-java-04-exercises-for-numeros-pares
+[submodule "aceleração/01.1-variáveis-e-seus-tipos/acc-java-04-exercises-if-else-desafio-estado-brasileiro"]
+	path = aceleração/01.1-variáveis-e-seus-tipos/acc-java-04-exercises-if-else-desafio-estado-brasileiro
+	url = https://github.com/tryber/acc-java-04-exercises-if-else-desafio-estado-brasileiro
+[submodule "aceleração/01.1-variáveis-e-seus-tipos/acc-java-04-exercises-while-desafio-numeros-aleatorios"]
+	path = aceleração/01.1-variáveis-e-seus-tipos/acc-java-04-exercises-while-desafio-numeros-aleatorios
+	url = https://github.com/tryber/acc-java-04-exercises-while-desafio-numeros-aleatorios
