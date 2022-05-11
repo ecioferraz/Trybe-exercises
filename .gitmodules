@@ -56,3 +56,6 @@
 [submodule "aceleração/02.1-abstração-classes-em-java/acc-java-04-exercises-conta-poupanca"]
 	path = aceleração/02.1-abstração-classes-em-java/acc-java-04-exercises-conta-poupanca
 	url = https://github.com/tryber/acc-java-04-exercises-conta-poupanca
+[submodule "aceleração/02.2-getters-and-setters/acc-java-04-exercises-encapsulamento-recursos-humanos"]
+	path = aceleração/02.2-getters-and-setters/acc-java-04-exercises-encapsulamento-recursos-humanos
+	url = https://github.com/tryber/acc-java-04-exercises-encapsulamento-recursos-humanos
