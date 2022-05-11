@@ -53,3 +53,6 @@
 [submodule "aceleração/01.3-finalmente-o-hello-world-em-java/acc-java-04-exercises-media-anual"]
 	path = aceleração/01.3-finalmente-o-hello-world-em-java/acc-java-04-exercises-media-anual
 	url = https://github.com/tryber/acc-java-04-exercises-media-anual
+[submodule "aceleração/02.1-abstração-classes-em-java/acc-java-04-exercises-conta-poupanca"]
+	path = aceleração/02.1-abstração-classes-em-java/acc-java-04-exercises-conta-poupanca
+	url = https://github.com/tryber/acc-java-04-exercises-conta-poupanca
