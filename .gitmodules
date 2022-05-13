@@ -62,3 +62,6 @@
 [submodule "aceleração/02.3-encapsulamento-e-herança/acc-java-04-exercises-gerar-pessoa-usuaria"]
 	path = aceleração/02.3-encapsulamento-e-herança/acc-java-04-exercises-gerar-pessoa-usuaria
 	url = https://github.com/tryber/acc-java-04-exercises-gerar-pessoa-usuaria
+[submodule "aceleração/02.5-interfaces-e-classes-abstratas/acc-java-04-exercises-jogo-das-fazendas"]
+	path = aceleração/02.5-interfaces-e-classes-abstratas/acc-java-04-exercises-jogo-das-fazendas
+	url = https://github.com/tryber/acc-java-04-exercises-jogo-das-fazendas
