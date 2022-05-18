@@ -65,3 +65,9 @@
 [submodule "aceleração/02.5-interfaces-e-classes-abstratas/acc-java-04-exercises-jogo-das-fazendas"]
 	path = aceleração/02.5-interfaces-e-classes-abstratas/acc-java-04-exercises-jogo-das-fazendas
 	url = https://github.com/tryber/acc-java-04-exercises-jogo-das-fazendas
+[submodule "aceleração/03.1-leitura-e-escrita-em-arquivos/acc-java-04-exercises-gerador-senhas"]
+	path = aceleração/03.1-leitura-e-escrita-em-arquivos/acc-java-04-exercises-gerador-senhas
+	url = https://github.com/tryber/acc-java-04-exercises-gerador-senhas
+[submodule "aceleração/03.1-leitura-e-escrita-em-arquivos/acc-java-04-exercises-transforma-texto"]
+	path = aceleração/03.1-leitura-e-escrita-em-arquivos/acc-java-04-exercises-transforma-texto
+	url = https://github.com/tryber/acc-java-04-exercises-transforma-texto
