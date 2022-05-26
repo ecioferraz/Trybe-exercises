@@ -71,3 +71,9 @@
 [submodule "aceleração/03.1-leitura-e-escrita-em-arquivos/acc-java-04-exercises-transforma-texto"]
 	path = aceleração/03.1-leitura-e-escrita-em-arquivos/acc-java-04-exercises-transforma-texto
 	url = https://github.com/tryber/acc-java-04-exercises-transforma-texto
+[submodule "aceleração/04.1-try-catch/acc-java-04-exercises-divisor"]
+	path = aceleração/04.1-try-catch/acc-java-04-exercises-divisor
+	url = https://github.com/tryber/acc-java-04-exercises-divisor
+[submodule "aceleração/04.1-try-catch/acc-java-04-exercises-tratando-nulos"]
+	path = aceleração/04.1-try-catch/acc-java-04-exercises-tratando-nulos
+	url = https://github.com/tryber/acc-java-04-exercises-tratando-nulos
