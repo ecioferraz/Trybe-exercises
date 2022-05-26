@@ -80,3 +80,6 @@
 [submodule "aceleração/04.2-refinando-seu-tratamento-de-erros/acc-java-04-exercises-excecao-maior-idade"]
 	path = aceleração/04.2-refinando-seu-tratamento-de-erros/acc-java-04-exercises-excecao-maior-idade
 	url = https://github.com/tryber/acc-java-04-exercises-excecao-maior-idade
+[submodule "aceleração/04.2-refinando-seu-tratamento-de-erros/acc-java-04-exercises-excecao-leitura-arquivos"]
+	path = aceleração/04.2-refinando-seu-tratamento-de-erros/acc-java-04-exercises-excecao-leitura-arquivos
+	url = https://github.com/tryber/acc-java-04-exercises-excecao-leitura-arquivos
