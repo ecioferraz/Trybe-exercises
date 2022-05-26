@@ -77,3 +77,6 @@
 [submodule "aceleração/04.1-try-catch/acc-java-04-exercises-tratando-nulos"]
 	path = aceleração/04.1-try-catch/acc-java-04-exercises-tratando-nulos
 	url = https://github.com/tryber/acc-java-04-exercises-tratando-nulos
+[submodule "aceleração/04.2-refinando-seu-tratamento-de-erros/acc-java-04-exercises-excecao-maior-idade"]
+	path = aceleração/04.2-refinando-seu-tratamento-de-erros/acc-java-04-exercises-excecao-maior-idade
+	url = https://github.com/tryber/acc-java-04-exercises-excecao-maior-idade
