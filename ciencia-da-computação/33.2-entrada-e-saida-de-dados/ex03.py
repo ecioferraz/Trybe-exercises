@@ -1,8 +1,6 @@
 import random
 
 
-words = ["trybe", "javascript", "python", "react", "express"]
-
 MAX_TRIES = 3
 
 
@@ -30,4 +28,7 @@ def scrabble(words):
                 break
 
 
-scrabble(words)
+with open("ex03.txt") as wordsFile:
+    words = wordsFile.read().splitlines()
+    # https://stackoverflow.com/questions/12330522/how-to-read-a-file-without-newlines
+    scrabble(words)
