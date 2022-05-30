@@ -9,3 +9,4 @@ regex = r'(^[a-zA-Z][a-zA-Z0-9_\-\.]*)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{3})$'
 def validate_email(email):
     if not (re.fullmatch(regex, email)):
         raise ValueError("Invalid email")
+    return None
