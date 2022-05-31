@@ -83,3 +83,9 @@
 [submodule "aceleração/04.2-refinando-seu-tratamento-de-erros/acc-java-04-exercises-excecao-leitura-arquivos"]
 	path = aceleração/04.2-refinando-seu-tratamento-de-erros/acc-java-04-exercises-excecao-leitura-arquivos
 	url = https://github.com/tryber/acc-java-04-exercises-excecao-leitura-arquivos
+[submodule "aceleração/05.1-coleções/acc-java-04-exercises-agenda"]
+	path = aceleração/05.1-coleções/acc-java-04-exercises-agenda
+	url = https://github.com/tryber/acc-java-04-exercises-agenda
+[submodule "aceleração/05.1-coleções/acc-java-04-exercises-agenda-com-map"]
+	path = aceleração/05.1-coleções/acc-java-04-exercises-agenda-com-map
+	url = https://github.com/tryber/acc-java-04-exercises-agenda-com-map
