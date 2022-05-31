@@ -89,3 +89,6 @@
 [submodule "aceleração/05.1-coleções/acc-java-04-exercises-agenda-com-map"]
 	path = aceleração/05.1-coleções/acc-java-04-exercises-agenda-com-map
 	url = https://github.com/tryber/acc-java-04-exercises-agenda-com-map
+[submodule "aceleração/05.2-streams/acc-java-04-exercises-criador-stream"]
+	path = aceleração/05.2-streams/acc-java-04-exercises-criador-stream
+	url = https://github.com/tryber/acc-java-04-exercises-criador-stream
