@@ -92,3 +92,6 @@
 [submodule "aceleração/05.2-streams/acc-java-04-exercises-criador-stream"]
 	path = aceleração/05.2-streams/acc-java-04-exercises-criador-stream
 	url = https://github.com/tryber/acc-java-04-exercises-criador-stream
+[submodule "aceleração/05.2-streams/acc-java-04-exercises-concessionaria"]
+	path = aceleração/05.2-streams/acc-java-04-exercises-concessionaria
+	url = https://github.com/tryber/acc-java-04-exercises-concessionaria
