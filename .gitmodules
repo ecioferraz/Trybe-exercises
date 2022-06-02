@@ -98,3 +98,6 @@
 [submodule "aceleração/06.1-datas-com-horários/acc-java-04-exercises-simulador-rendimento"]
 	path = aceleração/06.1-datas-com-horários/acc-java-04-exercises-simulador-rendimento
 	url = https://github.com/tryber/acc-java-04-exercises-simulador-rendimento
+[submodule "aceleração/06.2-operações-com-datas-e-horários/acc-java-04-exercises-ano-bissexto"]
+	path = aceleração/06.2-operações-com-datas-e-horários/acc-java-04-exercises-ano-bissexto
+	url = https://github.com/tryber/acc-java-04-exercises-ano-bissexto
