@@ -107,3 +107,6 @@
 [submodule "aceleração/08.1-testes-unitários-com-junit5/acc-java-04-exercises-sistema-rh"]
 	path = aceleração/08.1-testes-unitários-com-junit5/acc-java-04-exercises-sistema-rh
 	url = https://github.com/tryber/acc-java-04-exercises-sistema-rh
+[submodule "aceleração/08.2-tdd-com-junit5/acc-java-04-exercises-sistema-bancario"]
+	path = aceleração/08.2-tdd-com-junit5/acc-java-04-exercises-sistema-bancario
+	url = https://github.com/tryber/acc-java-04-exercises-sistema-bancario
