@@ -101,3 +101,6 @@
 [submodule "aceleração/06.2-operações-com-datas-e-horários/acc-java-04-exercises-ano-bissexto"]
 	path = aceleração/06.2-operações-com-datas-e-horários/acc-java-04-exercises-ano-bissexto
 	url = https://github.com/tryber/acc-java-04-exercises-ano-bissexto
+[submodule "aceleração/07.1-maven-e-gradle/acc-java-04-exercises-gradle-war"]
+	path = aceleração/07.1-maven-e-gradle/acc-java-04-exercises-gradle-war
+	url = https://github.com/tryber/acc-java-04-exercises-gradle-war
