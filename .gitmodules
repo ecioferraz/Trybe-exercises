@@ -113,3 +113,6 @@
 [submodule "aceleração/08.2-tdd-com-junit5/acc-java-04-exercises-sistema-bancario"]
 	path = aceleração/08.2-tdd-com-junit5/acc-java-04-exercises-veiculo-hibernate
 	url = https://github.com/tryber/acc-java-04-exercises-veiculo-hibernate
+[submodule "aceleração/09.2-orm-hibernate-relacionamentos-e-consultas/acc-java-04-exercises-datacenter-catalogo"]
+	path = aceleração/09.2-orm-hibernate-relacionamentos-e-consultas/acc-java-04-exercises-datacenter-catalogo
+	url = https://github.com/tryber/acc-java-04-exercises-datacenter-catalogo
