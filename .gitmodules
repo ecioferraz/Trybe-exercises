@@ -122,3 +122,6 @@
 [submodule "aceleração/10.2-logs-e-datasources/acc-java-04-exercises-search-cars"]
 	path = aceleração/10.2-logs-e-datasources/acc-java-04-exercises-search-cars
 	url = https://github.com/tryber/acc-java-04-exercises-search-cars
+[submodule "aceleração/10.3-fazendo-deploy-de-uma-aplicação/acc-java-04-exercises-buzzwarn"]
+	path = aceleração/10.3-fazendo-deploy-de-uma-aplicação/acc-java-04-exercises-buzzwarn
+	url = https://github.com/tryber/acc-java-04-exercises-buzzwarn
