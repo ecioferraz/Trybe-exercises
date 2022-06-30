@@ -119,3 +119,6 @@
 [submodule "aceleração/10.1-como-o-java-vai-para-a-web/acc-java-04-exercises-api-rest-spring"]
 	path = aceleração/10.1-como-o-java-vai-para-a-web/acc-java-04-exercises-api-rest-spring
 	url = https://github.com/tryber/acc-java-04-exercises-api-rest-spring
+[submodule "aceleração/10.2-logs-e-datasources/acc-java-04-exercises-search-cars"]
+	path = aceleração/10.2-logs-e-datasources/acc-java-04-exercises-search-cars
+	url = https://github.com/tryber/acc-java-04-exercises-search-cars
