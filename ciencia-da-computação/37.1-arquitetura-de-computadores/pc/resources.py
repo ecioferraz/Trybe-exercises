@@ -1,5 +1,7 @@
+import os
 from subprocess import check_output
 import threading
+from time import sleep
 
 cpu_info = check_output("lscpu").decode("UTF-8").split("\n")
 
@@ -37,3 +39,7 @@ def print_every_second():
 
 
 print_every_second()
+
+
+print(os.getpid())
+sleep(5)
