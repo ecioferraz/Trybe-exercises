@@ -125,3 +125,6 @@
 [submodule "aceleração/10.3-fazendo-deploy-de-uma-aplicação/acc-java-04-exercises-buzzwarn"]
 	path = aceleração/10.3-fazendo-deploy-de-uma-aplicação/acc-java-04-exercises-buzzwarn
 	url = https://github.com/tryber/acc-java-04-exercises-buzzwarn
+[submodule "aceleração/11.1-introducao-ao-spring-e-spring-boot/acc-java-04-exercises-camadas-projeto-spring"]
+	path = aceleração/11.1-introducao-ao-spring-e-spring-boot/acc-java-04-exercises-camadas-projeto-spring
+	url = https://github.com/tryber/acc-java-04-exercises-camadas-projeto-spring
