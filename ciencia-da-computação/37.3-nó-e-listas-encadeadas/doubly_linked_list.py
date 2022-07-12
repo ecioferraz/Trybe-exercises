@@ -2,7 +2,7 @@ from linked_list_content import LinkedList
 
 
 class DoublyLinkedList(LinkedList):
-    def index_of(self, value):
+    def index_of(self, value) -> int:
         position = 0
         current_value = self.head.next
 

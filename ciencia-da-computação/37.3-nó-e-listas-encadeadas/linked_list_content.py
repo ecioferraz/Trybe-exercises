@@ -103,7 +103,7 @@ class LinkedList:
 
         return value_to_be_returned
 
-    def index_of(self, value):
+    def index_of(self, value) -> int:
         position = 0
         current_value = self.head_value
 
