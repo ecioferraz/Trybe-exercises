@@ -103,6 +103,18 @@ class LinkedList:
 
         return value_to_be_returned
 
+    def index_of(self, value):
+        position = 0
+        current_value = self.head_value
+
+        while current_value:
+            if current_value.value == value:
+                return position
+            current_value = current_value.next
+            position += 1
+
+        return -1
+
 
 if __name__ == "__main__":
     linked_list = LinkedList()
@@ -149,6 +161,9 @@ if __name__ == "__main__":
     print(linked_list.is_empty())
     # saída: False
 
-    linked_list.clear()
+    # linked_list.clear()
     print(linked_list.is_empty())
     # saída: True
+
+    print(">>>>>", linked_list.get_element_at(0))
+    print(linked_list.index_of(5))
