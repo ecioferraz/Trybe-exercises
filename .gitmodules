@@ -128,3 +128,6 @@
 [submodule "aceleração/11.1-introducao-ao-spring-e-spring-boot/acc-java-04-exercises-camadas-projeto-spring"]
 	path = aceleração/11.1-introducao-ao-spring-e-spring-boot/acc-java-04-exercises-camadas-projeto-spring
 	url = https://github.com/tryber/acc-java-04-exercises-camadas-projeto-spring
+[submodule "aceleração/11.2-injeção-de-dependencias-e-organização-de-uma-aplicação-spring/acc-java-04-exercises-injecao-de-dependencias-sistema-pagamentos"]
+	path = aceleração/11.2-injeção-de-dependencias-e-organização-de-uma-aplicação-spring/acc-java-04-exercises-injecao-de-dependencias-sistema-pagamentos
+	url = https://github.com/tryber/acc-java-04-exercises-injecao-de-dependencias-sistema-pagamentos
