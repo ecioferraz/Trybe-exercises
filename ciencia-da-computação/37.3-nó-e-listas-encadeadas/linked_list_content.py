@@ -115,6 +115,17 @@ class LinkedList:
 
         return -1
 
+# course
+    # def remove_duplicates(self):
+    #     unique_elements_list = self()
+
+    #     while self:
+    #         current_node = self.remove_first()
+    #         if unique_elements_list.index_of(current_node.value) == -1:
+    #             unique_elements_list.insert_last(current_node.value)
+
+    #     return unique_elements_list
+
 
 if __name__ == "__main__":
     linked_list = LinkedList()
@@ -165,5 +176,7 @@ if __name__ == "__main__":
     print(linked_list.is_empty())
     # saída: True
 
-    print(">>>>>", linked_list.get_element_at(0))
+    print(linked_list.get_element_at(0))
     print(linked_list.index_of(5))
+
+    # print(linked_list.remove_duplicates())
