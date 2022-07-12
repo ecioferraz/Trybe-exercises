@@ -10,11 +10,11 @@ class Queue:
     def enqueue(self, value):
         self.__data.insert_last(value)
 
-    def dequeue(self, position: int) -> Union[Node, None]:
-        return self.__data.remove_at(position)
+    def dequeue(self) -> Union[Node, None]:
+        return self.__data.remove_first()
 
-    def peek(self, position: int) -> Union[Node, None]:
-        return self.__data.get_element_at(position)
+    def peek(self) -> Union[Node, None]:
+        return self.__data.get_element_at(0)
     
     def is_empty(self) -> bool:
         return not len(self.__data)

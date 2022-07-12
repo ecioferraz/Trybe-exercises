@@ -13,8 +13,8 @@ class Stack:
     def pop(self) -> Union[Node, None]:
         return self.__data.remove_last()
 
-    def peek(self, position: int) -> Union[Node, None]:
-        return self.__data.get_element_at(position)
+    def peek(self) -> Union[Node, None]:
+        return self.__data.get_element_at(len(self.__data))
 
     def is_empty(self) -> bool:
         return not len(self.__data)
