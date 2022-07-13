@@ -13,7 +13,7 @@ class Stack:
             if i + 1 < self.size():
                 str_items += ", "
 
-        return f"Stack({str_items})"
+        return f"{str_items}"
 
     # felps' vid {
     # def __str__(self) -> str:
