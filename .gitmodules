@@ -131,3 +131,6 @@
 [submodule "aceleração/11.2-injeção-de-dependencias-e-organização-de-uma-aplicação-spring/acc-java-04-exercises-injecao-de-dependencias-sistema-pagamentos"]
 	path = aceleração/11.2-injeção-de-dependencias-e-organização-de-uma-aplicação-spring/acc-java-04-exercises-injecao-de-dependencias-sistema-pagamentos
 	url = https://github.com/tryber/acc-java-04-exercises-injecao-de-dependencias-sistema-pagamentos
+[submodule "aceleração/11.3-spring-rest-sql-e-nosql/acc-java-04-exercises-pedro-quer-viajar"]
+	path = aceleração/11.3-spring-rest-sql-e-nosql/acc-java-04-exercises-pedro-quer-viajar
+	url = https://github.com/tryber/acc-java-04-exercises-pedro-quer-viajar
