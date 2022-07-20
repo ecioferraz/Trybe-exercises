@@ -134,3 +134,6 @@
 [submodule "aceleração/11.3-spring-rest-sql-e-nosql/acc-java-04-exercises-pedro-quer-viajar"]
 	path = aceleração/11.3-spring-rest-sql-e-nosql/acc-java-04-exercises-pedro-quer-viajar
 	url = https://github.com/tryber/acc-java-04-exercises-pedro-quer-viajar
+[submodule "aceleração/11.4-testes-no-spring/acc-java-04-exercises-calcular-idade"]
+	path = aceleração/11.4-testes-no-spring/acc-java-04-exercises-calcular-idade
+	url = https://github.com/tryber/acc-java-04-exercises-calcular-idade
