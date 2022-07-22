@@ -140,3 +140,6 @@
 [submodule "aceleração/11.5-deploy-de-aplicação-spring-no-heroku/acc-java-04-exercises-calculadora"]
 	path = aceleração/11.5-deploy-de-aplicação-spring-no-heroku/acc-java-04-exercises-calculadora
 	url = https://github.com/tryber/acc-java-04-exercises-calculadora
+[submodule "aceleração/12.1-introdução-ao-quarkus/acc-java-04-exercises-lista-produtos"]
+	path = aceleração/12.1-introdução-ao-quarkus/acc-java-04-exercises-lista-produtos
+	url = https://github.com/tryber/acc-java-04-exercises-lista-produtos
