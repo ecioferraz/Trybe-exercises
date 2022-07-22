@@ -143,3 +143,6 @@
 [submodule "aceleração/12.1-introdução-ao-quarkus/acc-java-04-exercises-lista-produtos"]
 	path = aceleração/12.1-introdução-ao-quarkus/acc-java-04-exercises-lista-produtos
 	url = https://github.com/tryber/acc-java-04-exercises-lista-produtos
+[submodule "aceleração/12.2-api-crud-com-tratamento-de-exceções/acc-java-04-exercises-panache-restaurantes"]
+	path = aceleração/12.2-api-crud-com-tratamento-de-exceções/acc-java-04-exercises-panache-restaurantes
+	url = https://github.com/tryber/acc-java-04-exercises-panache-restaurantes
