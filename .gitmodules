@@ -146,3 +146,6 @@
 [submodule "aceleração/12.2-api-crud-com-tratamento-de-exceções/acc-java-04-exercises-panache-restaurantes"]
 	path = aceleração/12.2-api-crud-com-tratamento-de-exceções/acc-java-04-exercises-panache-restaurantes
 	url = https://github.com/tryber/acc-java-04-exercises-panache-restaurantes
+[submodule "aceleração/12.3-testes-com-junit-e-deploy-no-heroku/acc-java-04-exercises-programa-cadastro"]
+	path = aceleração/12.3-testes-com-junit-e-deploy-no-heroku/acc-java-04-exercises-programa-cadastro
+	url = https://github.com/tryber/acc-java-04-exercises-programa-cadastro
